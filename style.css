@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.html {
+    font-size: 62.5%;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.logo {
+    order: 1;
+    font-size: 2.3rem;
+    font-weight: normal;
+    line-height: 1;
+
+}
+h3::first-letter{
+    color: red;
+}
+
+.sub {
+    font-size: 20px;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #117964;
+}
+
+.blue {
+    transition: transform .2s;
+    top: 100px;
+    z-index: 1;
+}
+
+.red {
+    z-index: 2;
+    left: 250px;
+    top: 100px;
+}
+
+/*.red:hover {
+    z-index: 10;
+    transform: scale(1.1);
+    top: 100px;
+}*/
+
+.pink {
+    top: 100px;
+    left: 450px;
+    z-index: 3;
+}
+
+.yellow {
+    z-index: 4;
+    left: 650px;
+    top: 100px;
+}
+
+.reds {
+    z-index: 6;
+    left: 830px;
+    top: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: fit-content;
+    width: 250px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
